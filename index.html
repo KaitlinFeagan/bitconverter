@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Have fun with the game!</h1>
+    <script>
+        function binary() {
+            let num = 204;
+
+            console.log("The number you picked is " + num);
+
+            if (isNaN(num) == true) {
+                console.log("Please enter a number.");
+            } else if (num < 0) {
+                console.log("Please enter a positive number.")
+            } else {
+                let parse = parseInt(num, 10);
+                let bin = parse.toString(2);
+                console.log(num + " in binary is " + bin + ".");
+                let n = bin.split("1").length -1;
+                console.log("This number has " + n + " bits.");
+        }
+        }
+
+        binary();
+
+        
+    </script>
+    </body>
+</html>
